@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Session Tracker",
+    "description": "Track and manage your browsing sessions",
+    "version": "1.0",
+    "permissions": [
+      "tabs",
+      "storage",
+      "downloads"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+  }
+  
