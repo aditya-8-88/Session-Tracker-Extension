@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+  </head>
+  <!-- Body -->
+  <body>
+    <section id="main">
+      <div class="container">
+        <h1 id="main-title">Session Tracker</h1>
+        <div id="main-buttons">
+            <button id="saveSession" class="button is-primary">Save Session</button>
+            <button id="clearSessions" class="button is-danger">Clear Sessions</button>
+        </div>
+        <ul id="sessionList" class="box"></ul>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="sessionModal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <p class="title is-5">Open Session</p>
+          <div class="buttons">
+            <button id="openCurrent" class="button is-primary">Open in Current Window</button>
+            <button id="openNew" class="button is-info">Open in New Window</button>
+          </div>
+        </div>
+      </div>
+      <button id="cancelModal" class="modal-close is-medium" aria-label="close"></button>
+   </div>
+   
+    <!-- Link to the external JavaScript file at the bottom -->
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
