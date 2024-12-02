@@ -1,4 +1,19 @@
 # Session Tracker Extension
+
+## Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+   - [Save Current Session](#save-current-session)
+   - [View Sessions](#view-sessions)
+   - [Open a Session](#open-a-session)
+5. [File Structure](#file-structure)
+6. [Permissions](#permissions)
+7. [Content Security Policy](#content-security-policy)
+8. [Known Issues](#known-issues)
+9. [License](#license)
+
 ## Overview
 **Session Tracker** is a Chrome extension that allows users to:
 
